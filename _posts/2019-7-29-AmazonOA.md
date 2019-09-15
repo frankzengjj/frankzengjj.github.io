@@ -51,6 +51,8 @@ Explanation: Starting from the top-left corner, the demolition robot traversed t
 
 这是一道亚马逊7月份OA里出现的一道题，题目看起来很长，但实际上不难理解，就是说一个机器人要在一个2维迷宫（数组）里从**左上角**开始找东西，然后有些格子不能走（数组数字=0），能走的是数组值为1的格子。9为要找的东西，找到时返回从左上角到最后目标的最短路径，否则返回-1。机器人可以上下左右走。
 
+The following solution was adapted from GeeksforGeeks https://www.geeksforgeeks.org/shortest-distance-two-cells-matrix-grid/
+
 ## Approach: Breadth First Search 广度优先搜索
 
 BFS在对于找最短路径的题目中非常有用，简单来说先建立一个Queue，以及一个array来记录已经访问过的格子。如果当前的格子不是最后目标则将它上下左右所有没有访问过的格子放入queue中。在最后的算法中，我额外建立一个数据结构叫Node用来记录当前格子的横轴坐标及从起点出发到当前的距离，**每次放入新的node到quueu中时，相应的距离要加1。**
