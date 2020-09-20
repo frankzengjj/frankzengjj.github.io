@@ -7,11 +7,11 @@ description: "Yes"
 keyword: "Blog"
 url: "http://frankzengjj.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/frankzengjj/frankzengjj.github.io.git" # you code repository
+github_repo: "https://github.com/frankzengjj" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "This is what's up"
+sidebar-about-description: "Software Engineer"
 sidebar-avatar: /img/profile.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
